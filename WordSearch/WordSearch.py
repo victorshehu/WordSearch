@@ -97,3 +97,4 @@ for i in matrix_words:
     formatted_results = " {} {} : {}".format(i ,result[0][0] , result[0][len(i) - 1])
 
     print(formatted_results)
+     input() 
