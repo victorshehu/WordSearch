@@ -94,7 +94,15 @@ for i in matrix_words:
     base_match = find_base_match(i[0], matrix)
     result = (complete_match(i, matrix, base_match, len(i), int(row_num), int(col_num)))
 
-    formatted_results = " {} {} : {}".format(i ,result[0][0] , result[0][len(i) - 1])
+
+    start_index = str(result[0][0])
+    start_index = start_index.replace(',', ':').replace('(', '').replace(')', '').replace(' ', '')
+
+    end_index = str(result[0][len(i) - 1])
+    end_index = end_index.replace(',', ':').replace('(', '').replace(')', '').replace(' ', '')
+
+    formatted_results = " {} {} {}".format(i, start_index, end_index)
 
     print(formatted_results)
-     input() 
+
+    input()
