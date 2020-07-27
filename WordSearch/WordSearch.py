@@ -95,7 +95,7 @@ for i in matrix_words:
     result = (complete_match(i, matrix, base_match, len(i), int(row_num), int(col_num)))
 
 
-    start_index = str(result[0][0])
+    start_index = str(result[0][0]) # Turn the element at this positon and turns it to string so it can be manipulated
     start_index = start_index.replace(',', ':').replace('(', '').replace(')', '').replace(' ', '')
 
     end_index = str(result[0][len(i) - 1])
