@@ -11,9 +11,9 @@ Input
 A B C
 D E F
 G H I
-ABC
-AEI
+ABC 
+AEI 
 
 Output
-ABC 0:0 0:2
-AEI 0:0 2:2
+ABC  0:0 0:2
+AEI  0:0 2:2
